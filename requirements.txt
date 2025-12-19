@@ -12,3 +12,6 @@ langchain-groq
 langchain-community
 duckduckgo-search
 pydeck
+langchain
+langchain-community
+duckduckgo-search
