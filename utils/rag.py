@@ -45,7 +45,10 @@ def researcher_node(state: AgentState):
     
     # Search Query 1: Disease Treatment
     query_disease = f"{state['disease_name']} treatment {state['crop_name']} fungicides India 2025"
-    res_disease = search_tool.invoke(query_disease)
+    try:
+        res_disease = search_tool.invoke(query_disease)
+    except Exception as e:
+        res_disease = "Live web search unavailable. Using internal knowledge base."
     
     # Search Query 2: Market Price
     query_market = f"Current market price {state['crop_name']} {state['location']} APMC mandis today"
