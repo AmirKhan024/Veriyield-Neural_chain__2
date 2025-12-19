@@ -1,0 +1,44 @@
+# Treatment Guide: Tomato Late Blight
+
+## Disease Overview
+Late Blight is a devastating disease caused by *Phytophthora infestans*, the same pathogen that caused the Irish Potato Famine. It spreads rapidly in cool, wet conditions.
+
+## Symptoms
+- Water-soaked lesions on leaves
+- White fungal growth on leaf undersides
+- Rapid browning and death of foliage
+- Brown, greasy spots on fruit
+- Disease progresses very quickly
+
+## Immediate Treatment (URGENT)
+1. **Act Immediately**: This disease can destroy entire crop in days
+2. **Apply Systemic Fungicide**: Use metalaxyl or mancozeb
+3. **Remove Infected Plants**: Destroy severely infected plants
+4. **Spray Adjacent Fields**: Treat neighboring plants preventively
+
+## Chemical Treatment
+- Metalaxyl-based fungicide: Apply every 5-7 days
+- Mancozeb: Apply at first sign of disease
+- Combination products for best results
+
+## Prevention
+- Plant resistant varieties
+- Avoid overhead irrigation
+- Apply preventive fungicides in high-risk periods
+- Monitor weather forecasts for favorable conditions
+
+## Timeline
+- Critical window: First 24-48 hours
+- Spray schedule: Every 5-7 days during outbreak
+- Continue for 3 weeks after last symptoms
+
+## Cost Estimate
+- Systemic fungicide: Rs 400-800 per liter
+- Multiple applications needed
+- Labor: Rs 800 per acre
+
+## Expected Recovery
+If caught early, 60-70% of crop can be saved. Late detection often results in total crop loss.
+
+## ALERT
+If Late Blight is confirmed, notify neighboring farmers immediately to prevent spread.

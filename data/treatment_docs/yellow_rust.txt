@@ -1,0 +1,22 @@
+# Disease: Yellow Rust / Stripe Rust (Puccinia striiformis)
+# Crop: Wheat
+
+## Symptoms
+- Bright yellow or orange-yellow pustules (stripes) parallel to the leaf veins.
+- Pustules can also appear on heads (glumes) of the wheat.
+- In severe cases, leaves dry out and the plant looks stunted.
+
+## Cultural Control
+1. Resistant Varieties: Use resistant wheat cultivars (e.g., HD-2967, DBW-187 in India).
+2. Sowing Time: Avoid very early sowing in rust-prone areas.
+3. Nutrient Management: Avoid excessive Nitrogen fertilizer, as it promotes lush growth that is susceptible to rust.
+
+## Chemical Control
+- Propiconazole (Tilt): Spray @ 1ml/liter of water immediately upon seeing symptoms.
+- Tebuconazole (Folicur): Effective for controlling spread.
+- Triadimefon: Another systemic fungicide option.
+
+## Immediate Treatment
+1. Inspect the field. If >5% of plants show stripes, begin spraying immediately.
+2. Spray Propiconazole (25 EC) at 0.1% solution.
+3. Repeat spray after 15 days if the weather remains cool and humid.

@@ -1,0 +1,89 @@
+--- GLOBAL TEXT RESET ---
+html, body, [class*="css"], .stMarkdown, .stText, h1, h2, h3, h4, h5, h6, p, li, span {
+    font-family: 'Inter', sans-serif;
+    color: #000000 !important; /* Force PITCH BLACK text everywhere */
+    text-shadow: none !important;
+}
+
+/* --- BACKGROUND --- */
+.stApp {
+    background-color: #F3F4F6 !important; /* Light Grey Background */
+    background-image: none !important;
+}
+
+/* --- HIDE STREAMLIT BRANDING --- */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* --- CARDS & CONTAINERS --- */
+/* This targets the main content blocks to make them pop */
+div[data-testid="stExpander"], div[data-testid="stForm"], .stContainer {
+    background-color: #FFFFFF !important; /* Pure White */
+    border: 1px solid #E5E7EB !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* --- SIDEBAR --- */
+section[data-testid="stSidebar"] {
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #E5E7EB !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #000000 !important; /* Force sidebar text black */
+}
+
+/* --- TABS --- */
+/* Inactive Tabs */
+.stTabs [data-baseweb="tab"] {
+    background-color: #FFFFFF !important;
+    color: #000000 !important; /* Black text */
+    border: 1px solid #D1D5DB !important;
+}
+
+/* Active Tab */
+.stTabs [aria-selected="true"] {
+    background-color: #2E7D32 !important; /* Green Background */
+    color: #FFFFFF !important; /* White Text */
+    border: 1px solid #2E7D32 !important;
+}
+
+/* --- METRICS (The Big Numbers) --- */
+div[data-testid="stMetricValue"] {
+    color: #2E7D32 !important; /* Green Numbers */
+    font-weight: 800 !important;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #000000 !important; /* Black Label */
+}
+
+/* --- BUTTONS --- */
+div.stButton > button {
+    background-color: #2E7D32 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+/* --- INPUT FIELDS --- */
+/* Force input text to be black so you can see what you type */
+input, textarea, select {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border: 1px solid #9CA3AF !important;
+}
+
+/* --- CHAT MESSAGES --- */
+.stChatMessage {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    color: #000000 !important;
+}
+
+div[data-testid="stChatMessageContent"] {
+    color: #000000 !important;
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "timestamp": "2025-12-18 18:58:00",
+        "type": "Insurance Payout",
+        "details": {
+            "amount": "0.5 ETH",
+            "tx": "0x26c9333c1b859153e3af7d1fa92e14a8e39f51a24400aa143150c965801dc26b",
+            "wallet": "0xUserWallet"
+        }
+    },
+    {
+        "timestamp": "2025-12-18 21:45:47",
+        "type": "Insurance Payout",
+        "details": {
+            "amount": "1.0 ETH (100% Coverage)",
+            "tx": "0xc3e782f7c6e66db9fb5cba1c75a250afb49a3593135a2005014389cb5ada3bdf",
+            "wallet": "0xUserWallet"
+        }
+    }
+]

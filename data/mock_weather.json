@@ -1,0 +1,65 @@
+{
+  "location": "Nashik, Maharashtra",
+  "current": {
+    "temperature": 28,
+    "humidity": 65,
+    "condition": "Partly Cloudy",
+    "wind_speed": 12,
+    "rainfall_today": 0
+  },
+  "forecast": [
+    {
+      "day": "Today",
+      "date": "2025-12-17",
+      "high": 30,
+      "low": 18,
+      "condition": "Partly Cloudy",
+      "rainfall_probability": 20,
+      "rainfall_amount": 0
+    },
+    {
+      "day": "Tomorrow",
+      "date": "2025-12-18",
+      "high": 29,
+      "low": 17,
+      "condition": "Heavy Rain",
+      "rainfall_probability": 85,
+      "rainfall_amount": 35
+    },
+    {
+      "day": "Day 3",
+      "date": "2025-12-19",
+      "high": 27,
+      "low": 16,
+      "condition": "Light Rain",
+      "rainfall_probability": 60,
+      "rainfall_amount": 10
+    },
+    {
+      "day": "Day 4",
+      "date": "2025-12-20",
+      "high": 28,
+      "low": 17,
+      "condition": "Sunny",
+      "rainfall_probability": 10,
+      "rainfall_amount": 0
+    },
+    {
+      "day": "Day 5",
+      "date": "2025-12-21",
+      "high": 31,
+      "low": 19,
+      "condition": "Sunny",
+      "rainfall_probability": 5,
+      "rainfall_amount": 0
+    }
+  ],
+  "alerts": [
+    {
+      "type": "heavy_rain",
+      "severity": "high",
+      "message": "Heavy rain expected tomorrow at 2 PM. Please cover your tomato saplings now.",
+      "timestamp": "2025-12-17T06:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "market": "Vashi APMC, Navi Mumbai",
+  "last_updated": "2025-12-17T06:00:00Z",
+  "crops": {
+    "tomato": {
+      "crop_name": "Tomato",
+      "current_price": 25,
+      "unit": "Rs/kg",
+      "trend": "dropping",
+      "change_percentage": -8,
+      "weekly_high": 32,
+      "weekly_low": 22,
+      "demand": "moderate",
+      "supply": "high",
+      "forecast_next_week": 22
+    },
+    "onion": {
+      "crop_name": "Onion",
+      "current_price": 18,
+      "unit": "Rs/kg",
+      "trend": "stable",
+      "change_percentage": 2,
+      "weekly_high": 20,
+      "weekly_low": 16,
+      "demand": "high",
+      "supply": "moderate",
+      "forecast_next_week": 19
+    },
+    "wheat": {
+      "crop_name": "Wheat",
+      "current_price": 28,
+      "unit": "Rs/kg",
+      "trend": "rising",
+      "change_percentage": 5,
+      "weekly_high": 28,
+      "weekly_low": 24,
+      "demand": "high",
+      "supply": "low",
+      "forecast_next_week": 30
+    },
+    "potato": {
+      "crop_name": "Potato",
+      "current_price": 15,
+      "unit": "Rs/kg",
+      "trend": "stable",
+      "change_percentage": 0,
+      "weekly_high": 16,
+      "weekly_low": 14,
+      "demand": "moderate",
+      "supply": "moderate",
+      "forecast_next_week": 15
+    },
+    "cabbage": {
+      "crop_name": "Cabbage",
+      "current_price": 12,
+      "unit": "Rs/kg",
+      "trend": "rising",
+      "change_percentage": 3,
+      "weekly_high": 12,
+      "weekly_low": 10,
+      "demand": "moderate",
+      "supply": "low",
+      "forecast_next_week": 14
+    }
+  },
+  "routes": {
+    "Nashik_to_Vashi": {
+      "route_a": {
+        "distance_km": 185,
+        "estimated_time": "4.5 hours",
+        "traffic_status": "heavy",
+        "toll_cost": 450,
+        "condition": "not_recommended"
+      },
+      "route_b": {
+        "distance_km": 195,
+        "estimated_time": "4 hours",
+        "traffic_status": "light",
+        "toll_cost": 380,
+        "condition": "recommended"
+      }
+    }
+  },
+  "insights": [
+    {
+      "message": "Tomato prices dropping. Consider harvesting NOW before prices fall further.",
+      "urgency": "high"
+    },
+    {
+      "message": "Wheat demand is high. Good time to negotiate premium prices.",
+      "urgency": "medium"
+    }
+  ]
+}

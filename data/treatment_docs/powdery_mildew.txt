@@ -1,0 +1,22 @@
+# Disease: Powdery Mildew
+# Crop: Cucumber, Melon, Pumpkin, Grape
+
+## Symptoms
+- White, powdery fungal growth on the upper surface of leaves.
+- Looks like the leaf has been dusted with flour.
+- Leaves may turn yellow, curl, and die.
+
+## Cultural Control
+1. Sunlight: Ensure plants get full sun (6+ hours).
+2. Spacing: Plant crops far enough apart to ensure good airflow.
+3. Resistance: Choose resistant hybrid varieties.
+
+## Chemical Control
+- Sulfur-based fungicides are very effective if applied early.
+- Potassium Bicarbonate: A organic contact fungicide.
+- Neem Oil: Can help reduce mild infections.
+
+## Immediate Treatment
+1. Remove severely infected leaves to reduce spore load.
+2. Spray a mixture of Baking Soda (1 tbsp) + Liquid Soap (1 tsp) + Water (1 gallon).
+3. If severe, apply Wettable Sulfur immediately (do not apply if temp > 32°C).

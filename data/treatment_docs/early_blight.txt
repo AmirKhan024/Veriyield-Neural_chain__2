@@ -1,0 +1,68 @@
+# Treatment Guide: Tomato Early Blight
+
+## Disease Overview
+Early Blight is a common fungal disease affecting tomato plants, caused by *Alternaria solani*. It typically appears as dark brown spots with concentric rings on older leaves.
+
+## Symptoms
+- Dark brown to black spots on lower leaves
+- Concentric rings creating a "target" pattern
+- Yellow halo around spots
+- Leaves may yellow and drop
+- Can spread to stems and fruit
+
+## Immediate Treatment
+1. **Remove Infected Leaves**: Immediately remove and destroy affected leaves
+2. **Apply Fungicide**: Use copper-based fungicide or chlorothalonil
+3. **Improve Air Circulation**: Prune plants to increase airflow
+4. **Mulch**: Apply organic mulch to prevent soil splash
+
+## Organic Solutions
+- Neem oil spray (apply every 7-10 days)
+- Baking soda solution (1 tablespoon per gallon of water)
+- Compost tea foliar spray
+
+## Prevention
+- Water at soil level, avoid wetting leaves
+- Space plants properly for air circulation
+- Rotate crops yearly
+- Remove plant debris promptly
+- Apply mulch to prevent soil contact
+
+## Timeline
+- Treatment effectiveness: 7-14 days
+- Continue monitoring for 3 weeks
+- Reapply treatments weekly during humid conditions
+
+## Cost Estimate
+- Copper fungicide: Rs 150-300 per liter
+- Neem oil: Rs 100-200 per liter
+- Labor: Rs 500 per acre
+
+## Expected Recovery
+With proper treatment, plants should show improvement within 10 days. New growth should be healthy and disease-free.
+
+
+# Disease: Early Blight (Alternaria solani)
+# Crop: Tomato, Potato
+
+## Symptoms
+- Small, dark brown to black spots on older (lower) leaves.
+- Spots have concentric rings (target-board effect).
+- Yellowing (chlorosis) of the tissue surrounding the spots.
+- Fruit may drop prematurely.
+
+## Cultural Control (Prevention)
+1. Crop Rotation: Rotate with non-solanaceous crops (like corn or beans) for at least 3 years.
+2. Sanitation: Remove and destroy infected plant debris immediately. Do not compost.
+3. Airflow: Stake or cage plants to keep them off the ground and improve air circulation.
+4. Irrigation: Use drip irrigation. Avoid overhead watering to keep leaves dry.
+
+## Chemical Control (Fungicides)
+- Apply Mancozeb or Chlorothalonil as a preventative spray when conditions are humid.
+- If disease is established, use Azoxystrobin or Copper-based fungicides.
+- Spray Interval: Every 7-10 days, or more frequently during rainy weather.
+
+## Immediate Treatment
+1. Prune all infected lower leaves immediately and burn them.
+2. Apply a copper-based fungicide to protect the remaining healthy leaves.
+3. Stop overhead watering; water only at the base of the plant.

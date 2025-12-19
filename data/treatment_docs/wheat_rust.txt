@@ -1,0 +1,48 @@
+# Treatment Guide: Wheat Rust (Yellow/Brown/Black)
+
+## Disease Overview
+Wheat rust is caused by various fungal species. Yellow rust (stripe rust), brown rust (leaf rust), and black rust (stem rust) can significantly reduce yield.
+
+## Symptoms
+- Yellow Rust: Yellow-orange stripes parallel to leaf veins
+- Brown Rust: Orange-brown pustules scattered on leaves
+- Black Rust: Black pustules on stems and leaf sheaths
+
+## Immediate Treatment
+1. **Apply Fungicide**: Triazole-based fungicides are most effective
+2. **Scout Fields Regularly**: Early detection is critical
+3. **Monitor Weather**: Rust spreads rapidly in cool, moist conditions
+
+## Chemical Treatment
+- Propiconazole: Apply at first sign of disease
+- Tebuconazole: Effective for all rust types
+- Mancozeb: Can be used as preventive measure
+
+## Application Schedule
+- First spray: At disease appearance
+- Second spray: 15-20 days later if needed
+- Timing: Morning or evening for best results
+
+## Prevention
+- Plant resistant varieties
+- Remove volunteer wheat plants
+- Proper crop rotation
+- Balanced fertilization (avoid excess nitrogen)
+
+## Timeline
+- Response time: 5-7 days after spray
+- Second spray may be needed in 2-3 weeks
+- Monitor until grain filling stage
+
+## Cost Estimate
+- Triazole fungicide: Rs 300-500 per liter
+- Coverage: 200-250 ml per acre
+- Labor: Rs 400 per acre
+
+## Expected Recovery
+Early treatment can prevent 40-60% yield loss. Delayed treatment reduces effectiveness significantly.
+
+## Yield Impact
+- Untreated: 30-70% yield loss
+- Treated early: 5-15% yield loss
+- Treated late: 20-40% yield loss
