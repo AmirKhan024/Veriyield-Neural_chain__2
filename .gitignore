@@ -16,3 +16,5 @@ build/
 start.ps1
 test.py
 .env_example
+quality_certificate.pdf
+smaart_policy.pdf

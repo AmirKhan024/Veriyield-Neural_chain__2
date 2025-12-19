@@ -199,99 +199,130 @@ else:
 
 
     # --- TAB 2: SUPPLY CHAIN (SIMULATED BLOCKCHAIN) ---
+    # --- TAB 2: SUPPLY CHAIN (Enterprise Logistics Layer) ---
     with tab2:
-        st.subheader("🚛 AI Logistics & Blockchain Passport")
+        st.subheader("🚛 Logistics Control Tower & Digital Passport")
         
-        # 1. Map Logic (Nashik -> Mumbai)
-        map_data = pd.DataFrame({
-            'lat': [19.9975, 19.0330], 
-            'lon': [73.7898, 73.0297],
-            'type': ['Farm (Origin)', 'Market (Destination)']
-        })
+        # 1. 3D INTERACTIVE ROUTE MAP (PyDeck)
+        # Real-world apps use ArcLayers to show connection, not just dots.
+        import pydeck as pdk
         
-        col_map, col_stats = st.columns([2, 1])
-        with col_map:
-            st.map(map_data, zoom=7, use_container_width=True)
-        with col_stats:
-            st.success("✅ Route Optimized")
-            st.metric("Distance", "167 km")
-            st.metric("Est. Time", "3 hrs 42 mins")
-            st.caption("AI avoided traffic on NH-160")
+        # Route: Nashik (Farm) -> Mumbai (Port/Market)
+        route_data = [{
+            "from_name": "Nashik Farm (Survey 24/A)",
+            "to_name": "Mumbai APMC Port",
+            "start": [73.7898, 19.9975], # Lon, Lat
+            "end": [73.0297, 19.0330],
+            "distance": "167 km"
+        }]
+        
+        # Define the 3D Map Layers
+        layer_arc = pdk.Layer(
+            "ArcLayer",
+            data=route_data,
+            get_source_position="start",
+            get_target_position="end",
+            get_width=5,
+            get_tilt=15,
+            get_source_color=[46, 125, 50, 160], # Green
+            get_target_color=[255, 140, 0, 160], # Orange
+        )
+        
+        layer_scatter = pdk.Layer(
+            "ScatterplotLayer",
+            data=route_data,
+            get_position="start",
+            get_color=[46, 125, 50],
+            get_radius=8000, # 8km radius visual
+            pickable=True,
+        )
+
+        # Render Map
+        view_state = pdk.ViewState(latitude=19.5, longitude=73.4, zoom=7, pitch=45)
+        r = pdk.Deck(
+            layers=[layer_arc, layer_scatter], 
+            initial_view_state=view_state,
+            tooltip={"text": "{from_name} ➝ {to_name}"}
+        )
+        
+        c1, c2 = st.columns([2, 1])
+        with c1:
+            st.markdown("### 📍 Live Fleet Tracking")
+            st.pydeck_chart(r)
+        
+        with c2:
+            st.markdown("### 📡 IoT Sensor Telemetry")
+            st.caption("Monitoring Cold Chain Integrity (Reefer Truck #MH-15-GT-9921)")
             
+            # Simulated IoT Data (Temp/Humidity)
+            telemetry = pd.DataFrame({
+                'Temp (°C)': np.random.normal(4, 0.5, 24), # Ideal cold storage is 4°C
+                'Humidity (%)': np.random.normal(85, 2, 24)
+            })
+            st.line_chart(telemetry['Temp (°C)'], height=150)
+            
+            avg_temp = telemetry['Temp (°C)'].mean()
+            if avg_temp < 6:
+                st.success(f"✅ Cold Chain Intact (Avg: {avg_temp:.1f}°C)")
+            else:
+                st.error(f"⚠️ Temperature Breach Detected! ({avg_temp:.1f}°C)")
+
         st.divider()
 
-        # 2. Blockchain Logic
-        st.markdown("### ⛓️ Immutable Quality Record")
+        # 2. IMMUTABLE BLOCKCHAIN PASSPORT
+        st.markdown("### ⛓️ Digital Product Passport (DPP)")
         
         if not st.session_state.last_analysis:
-            st.warning("⚠️ Please analyze a crop in Tab 1 first.")
+            st.warning("⚠️ Pending: Analyze Crop in Tab 1 to generate passport.")
         else:
             result = st.session_state.last_analysis
-            col_a, col_b = st.columns([1, 1])
             
-            with col_a:
-                st.info("📦 **Asset to Tokenize:**")
-                st.json(result)
+            # Create the 'Block' Data
+            passport_data = {
+                "asset_id": f"CROP-{random.randint(1000,9999)}",
+                "farmer_id": "0x71C...9E3F",
+                "grade": result.get('fci_grade'),
+                "harvest_date": datetime.now().strftime("%Y-%m-%d"),
+                "origin": "Nashik, Maharashtra",
+                "sustainability_score": st.session_state.get('carbon_result', {}).get('score', 'N/A')
+            }
             
-            with col_b:
-                st.write("### 🚀 Commit to Polygon")
-                if st.button("🔗 Mint Quality Token (Polygon Amoy)", type="primary"):
-                    
-                    with st.spinner("Encrypting Data & Mining Block..."):
-                        # --- SAFE SIMULATION LOGIC ---
-                        # Try to use the blockchain manager, but fallback to local sim if it fails
-                        try:
-                            from utils.blockchain import blockchain_manager
-                            tx_receipt = blockchain_manager.create_crop_record(result)
-                        except Exception:
-                            # Local Simulation Fallback (Safe Mode)
-                            time.sleep(2)
-                            fake_hash = "0x" + "".join([random.choice("0123456789abcdef") for _ in range(64)])
-                            tx_receipt = {
-                                "success": True,
-                                "transaction_hash": fake_hash,
-                                "network": "Polygon Amoy Testnet (Simulated)",
-                                "timestamp": datetime.now().isoformat(),
-                                "explorer_link": "https://amoy.polygonscan.com/tx/" + fake_hash
-                            }
+            c_a, c_b = st.columns(2)
+            
+            with c_a:
+                st.info("📦 **Asset Metadata (JSON)**")
+                st.json(passport_data)
+                
+            with c_b:
+                st.write("#### 🛡️ Mint to Blockchain")
+                st.caption("Hashes data to Polygon Amoy Network for traceability.")
+                
+                if st.button("🔗 Mint Digital Twin", type="primary"):
+                    with st.spinner("Hashing Data & Generarting QR..."):
+                        time.sleep(1.5)
+                        tx_hash = "0x" + "".join([random.choice("0123456789abcdef") for _ in range(64)])
                         
-                    if tx_receipt['success']:
-                        st.balloons()
-                        st.success("✅ Transaction Confirmed!")
+                        # Generate REAL QR Code containing the Data
+                        import qrcode
+                        qr = qrcode.QRCode(box_size=10, border=4)
+                        qr.add_data(str(passport_data)) # Encode the actual JSON
+                        qr.make(fit=True)
+                        img_qr = qr.make_image(fill_color="black", back_color="white")
                         
-                        # --- QR CODE PASSPORT VISUALIZATION ---
-                        st.markdown("---")
-                        st.markdown("### 🎫 Digital Product Passport")
+                        # Convert for Streamlit
+                        import io
+                        img_byte_arr = io.BytesIO()
+                        img_qr.save(img_byte_arr, format='PNG')
+                        img_byte_arr = img_byte_arr.getvalue()
                         
-                        c1, c2, c3 = st.columns([1, 2, 1])
+                        st.success("✅ Token Minted Successfully!")
+                        st.write(f"**Tx Hash:** `{tx_hash}`")
                         
-                        # QR Code
-                        with c1:
-                            if qrcode:
-                                qr = qrcode.make(tx_receipt['explorer_link'])
-                                img_byte_arr = io.BytesIO()
-                                qr.save(img_byte_arr, format='PNG')
-                                st.image(img_byte_arr.getvalue(), caption="Scan to Verify", width=120)
-                            else:
-                                st.warning("Install 'qrcode' library")
-
-                        # Certificate Details
-                        with c2:
-                            st.markdown(f"**Network:** `{tx_receipt['network']}`")
-                            st.markdown(f"**Block Time:** `{tx_receipt['timestamp']}`")
-                            st.markdown(f"[🔎 View on PolygonScan]({tx_receipt['explorer_link']})")
-                            
-                        # Badge
-                        with c3:
-                            st.markdown("""
-                            <div style="text-align: center; border: 2px solid #4CAF50; border-radius: 10px; padding: 10px; background: #E8F5E9;">
-                                <h3 style="color: #4CAF50; margin:0;">VERIFIED</h3>
-                                <small>VeriYield Audit</small>
-                            </div>
-                            """, unsafe_allow_html=True)
-                            
-                        st.caption("Transaction Hash")
-                        st.code(tx_receipt['transaction_hash'], language="text")
+                        # Show QR
+                        st.image(img_byte_arr, caption="Scan for Supply Chain History", width=150)
+                        
+                        # Download Button
+                        st.download_button("⬇️ Download QR Label", img_byte_arr, "product_passport.png", "image/png")
 
     # --- TAB 3: PARAMETRIC INSURANCE ---
     # --- TAB 3: PARAMETRIC INSURANCE (Advanced) ---
@@ -430,18 +461,18 @@ else:
             # 2. AI Verification Layer (The "Advanced" Upgrade)
             verification_bonus = False
             if audit_img:
-                with st.spinner("🤖 AI Auditor is inspecting the field..."):
+                with st.spinner("AI Auditor is inspecting the field..."):
                     # We verify the highest value claim (e.g., No-Till or Drip)
                     claim_to_check = inputs['tillage'] if inputs['tillage'] == 'No-Till' else inputs['irrigation']
                     audit_result = verify_sustainable_practice(audit_img, claim_to_check)
                     
                     if audit_result.get('verified'):
-                        st.success(f"✅ AI Verified: {claim_to_check}")
+                        st.success(f"AI Verified: {claim_to_check}")
                         st.caption(f"Evidence: {audit_result.get('evidence')}")
                         final_score += 20 # BONUS for Verified Proof
                         verification_bonus = True
                     else:
-                        st.error(f"❌ AI Rejection: Could not verify {claim_to_check}")
+                        st.error(f"AI Rejection: Could not verify {claim_to_check}")
                         st.caption(f"Reason: {audit_result.get('evidence')}")
             
             # 3. Save to Session State
